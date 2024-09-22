@@ -1,0 +1,16 @@
+-- database: ../dating.db
+
+
+INSERT INTO USERS (Id, UserName, UserAge) VALUES (654321, 'Jennifer Lopez', 55);
+INSERT INTO USERS (Id, UserName, UserAge) VALUES (111111, 'Ben Affleck', 52);
+INSERT INTO USERS (Id, UserName, UserAge) VALUES (123456, 'Daniel Craig', 56);
+INSERT INTO USERS (Id, UserName, UserAge) VALUES (222222, 'Monica Belucci', 59);
+SELECT * FROM USERS;
+DELETE FROM USERS WHERE Id=222222;
+
+UPDATE USERS SET 'USERAGE'=66 WHERE Id=654321;
+
+SELECT * FROM Users
+ORDER BY `Id` ASC;
+
+UPDATE `Users` SET `UserAge` = 55 WHERE `rowid` IS 2 AND `UserAge` IS 55;
